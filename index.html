@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Minha Página</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        p{
+            font-family: 'Courier New';
+            padding: 2px;
+            text-align: center;
+        }
+
+        .conteudo {
+            display: flex;
+            justify-content: center;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(201, 28, 28);            
+        }
+
+        span{
+            color: red;
+        }
+
+        .imagem-com-paragrafo {
+            margin: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        img {
+            max-width: 100%;
+            margin: 30px;
+            height: 150px; /* Isso permite que a imagem mantenha sua proporção de aspecto */
+        }
+
+        .textopag{
+            border: solid 3px;
+        }
+
+        .paragrafo {
+            display: none;
+            background-color: rgba(51, 51, 51, 0.8); /* Cor de fundo com transparência */
+            color: #fff; /* Cor do texto */
+            padding: 5px;
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Souls Like</h1>        
+    </header>
+
+    <main>
+        <div>
+            <p>
+                Um jogo soulslike é aquele que incorpora várias das características dos
+                jogos "Demon´s Souls" e "Dark Souls", que mesmo não sendo "souls" de fato,
+                títulos como Bloodborne e Elden Ring podem ser considerados um "souls" graças
+                as suas mecânicas de e por serem desenvolvidos pela FromSoftware, empresa
+                na qual carrega esse título.
+             </p>
+        </div>
+        <!-- Imagens da página -->
+        <section class="conteudo" id="image-container">
+            <!--Lies of P-->
+            <div class="imagem-com-paragrafo" onmouseover="showParagraph(this)" onmouseout="hideParagraph(this)">
+                <a href="https://store.steampowered.com/app/1627720/Lies_of_P/">
+                    <img src="liesof.p.jpg" alt="Imagem 1">
+                    <p class="paragrafo">Desenvolvido pela Round Studios e Neowiz games, é um 
+                        soulslike baseado no conto de Carlo Collodi: "As Aventuras de Pinóquio".
+                    </p>
+                </a>
+            </div>
+            <!--Dark Souls-->
+            <div class="imagem-com-paragrafo" onmouseover="showParagraph(this)" onmouseout="hideParagraph(this)">
+                <a href="https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/">
+                    <img src="dark.avif" alt="Imagem 2">
+                    <p class="paragrafo">Esse título da FromSoftware é uma espécie
+                        de sucessor espiritual de Demon´s Soul. Dark Souls se tornou um grande
+                        precursor dos jogos do estilo soulslike.
+                    </p>
+                </a>                
+            </div>
+            <!--BloodBorne-->
+            <div class="imagem-com-paragrafo" onmouseover="showParagraph(this)" onmouseout="hideParagraph(this)">
+                <a href="https://www.playstation.com/pt-br/games/bloodborne/">
+                    <img src="bloodborne.jpg" alt="Imagem 3">
+                    <p class="paragrafo">Desenvolvido pela FromSoftware, bloodborne é um jogo desenvolvido
+                        especificamente para os consoles e se tornou um jogo grandioso  graças ao seus cenários 
+                        góticos e sua história cheia de misterios.
+                    </p>
+                </a>                
+            </div>
+            <!--Elden Ring-->  
+            <div class="imagem-com-paragrafo" onmouseover="showParagraph(this)" onmouseout="hideParagraph(this)">
+                <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/">
+                    <img src="elden jpg.webp" alt="Imagem 4">
+                    <p class="paragrafo">Outro grande título da FromSoftware, 
+                        Elden Ring é uma obra prima, com seu incrível level design e
+                        suas explorações incríveis pelas Terras Intermédias.                    </p>
+                </a>                
+            </div>
+            <!--Lords of the Fallen-->
+            <div class="imagem-com-paragrafo" onmouseover="showParagraph(this)" onmouseout="hideParagraph(this)">
+                <a href="https://store.steampowered.com/app/1501750/Lords_of_the_Fallen/">
+                    <img src="lords.jpg" alt="Imagem 5">
+                    <p class="paragrafo">Um reboot do título de 2014, é um outro 
+                        grande título soulslike que foi lançado recentemente. Possuindo 
+                        melhorias em seus gráficos e jogabilidade.
+                    </p>
+                </a>
+            </div>
+        </section>
+        <div class="textopag">
+            <p>
+                Além dos citados acima, o gênero soulslike possui muitos outros títulos
+                como <a href="https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/">
+                    Sekiro</a> e <a href="https://store.steampowered.com/app/485510/Nioh_Complete_Edition/">
+                    Nioh</a>, que são jogos bem famosos devido ao seu grau de dificuldade.
+            </p>
+
+            <p>
+                Para se ter uma ótima experiência com esse estilo é bem adequado você buscar 
+                qual dos títulos citados e outros são melhores para você. <br>
+                Soulslike é um estilo de jogo dificil e muito empolgante que requer muita determinação
+                e força de vontade para conseguir terminar e buscar por novas aventuras. Toda sua 
+                experiência com os chefes, inimigos e a história contada de forma completamente diferente
+                torna esse estilo de jogo único e um dos melhores da atualidade.
+                <br>
+                <br>
+                Se deseja conhecer mais sobre esses títulos e até mesmo jogar um deles, recomendo buscar
+                mais informações e assistir algumas gameplays disponíveis no <span>YouTube</span>, tanto por streamers
+                e youtubers que já jogaram os jogos citados como também para assistir as gameplays disponíveis
+                pelos próprios desenvolvedores. Os jogos do gênero "souls" não só são muito agradáveis e emocionantes de jogar como
+                também são bem interessantes de assistir. Procure o título que mais te atraia e experimente
+                entrar nesse universo fantástico e complexo.      
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Iury</p>
+    </footer>
+
+    <script>
+        function showParagraph(element) {
+            var paragraph = element.querySelector('.paragrafo');
+            paragraph.style.display = 'block';
+        }
+
+        function hideParagraph(element) {
+            var paragraph = element.querySelector('.paragrafo');
+            paragraph.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
